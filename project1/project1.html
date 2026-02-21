@@ -1,40 +1,74 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Otto's Website</title>
-    <link rel = "stylesheet" href = "styles.css">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/foundation-sites@6.7.5/dist/css/foundation.min.css">
-    <script src="https://cdn.jsdelivr.net/npm/foundation-sites@6.7.5/dist/js/foundation.min.js"></script>
-</head>
-<body>
-    <header>
-        <nav>
-            <!-- Will Does -->
-        </nav>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Otto's Website</title>
+        <link rel = "stylesheet" href = "styles.css">
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/foundation-sites@6.7.5/dist/css/foundation.min.css">
+    </head>
+    <body>
         
+        <!-- Mobile top bar -->
+        <div class="title-bar" data-responsive-toggle="responsive-menu" data-hide-for="medium">
+            <button class="menu-icon" type="button" data-toggle="responsive-menu"></button>
+        </div>
 
-    </header>
-    
-    <main>
+        <!-- Desktop top bar -->
+        <div class="top-bar" id="responsive-menu">
+            <div class="top-bar-left">
+                <h1 class="site-title">Website Name</h1>
+            </div>
+            <div class="top-bar-right">
+                <ul class="menu">
+                    <li><a href="#home">Link</a></li>
+                    <li><a href="#about">Link</a></li>
+                    <li><a href="#gallery">Link</a></li>
+                    <li><a href="#funfacts">Link</a></li>
+                </ul>
+            </div>
+        </div>
         
-        <!-- Content area featuring large image with accompanying text.:Jareline -->
-        
+        <main>
+            
+            <!-- Content area featuring large image with accompanying text.:Jareline -->
+            
 
-        <section>
-            <!-- A section with at least 3 images laid out in a row, each with a title underneath :Brian-->
-        </section>
-
-
-
-    </main>
-
-    <footer>
-
-        <!-- Will does -->
-    </footer>
+            <section>
+                <!-- A section with at least 3 images laid out in a row, each with a title underneath :Brian-->
+            </section>
 
 
-</body>
+
+        </main>
+
+        <footer>
+            <div class="grid-container">
+                <div class="grid-x grid-margin-x">
+                    <div class="cell small-12 medium-6">
+                        <h4>About Otto</h4>
+                        <p>Otto the Orange is the beloved mascot of Syracuse University. 
+                            Known for his energy and spirit, Otto has been cheering on the 
+                            Orange since 1995!</p>
+                    </div>
+                    <div class="cell small-12 medium-6">
+                        <h4>Syracuse University</h4>
+                        <p>📍 Syracuse, NY</p>
+                        <p>🌐 <a href="https://www.syracuse.edu" target="_blank">syracuse.edu</a></p>
+                        <p>🏈 <a href="https://cuse.com" target="_blank">cuse.com</a></p>
+                    </div>
+                </div>
+                <div class="footer-bottom">
+                    <p>© 2026. All rights reserved.</p>
+                </div>
+            </div>
+        </footer>
+
+        <script src="https://cdn.jsdelivr.net/npm/jquery/dist/jquery.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/foundation-sites@6.7.5/dist/js/foundation.min.js"></script>
+        <script>
+            $(document).foundation();
+        </script>
+
+    </body>
 </html>
