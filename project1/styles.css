@@ -91,3 +91,40 @@ footer ul li {
     font-size: 0.8rem;
     color: #aaa;
 }
+/* Jareline's CSS */
+main {
+    padding-top: 5rem;
+}
+main h3 {
+    color: #F76900;
+    font-weight: bold;
+}
+main h5 {
+    color: #F76900;
+    font-weight: bold;
+}
+.button {
+    width: 0.7rem;
+    height: 0.7rem;
+    margin: 0.1rem;
+}
+.orbit-bullets button {
+    width: 10px !important; 
+    height: 10px !important;
+    min-height: 10px !important;
+    margin: 5px;
+    border-radius: 50% !important; 
+}
+.orbit-bullets {
+    margin-top: 5px !important;
+}
+.orbit-container {
+    height: 415px !important;
+    overflow: hidden;
+}
+.orbit-image {
+    width: 100%;
+    height: 415px !important;
+    object-fit: cover;
+    object-fit: center;
+}
