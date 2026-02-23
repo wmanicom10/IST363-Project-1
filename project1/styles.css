@@ -152,12 +152,22 @@ main h5 {
     border-radius: 3em;
 }
 .space_font_bp .button {
-    width: auto !important;         /* Force it to ignore the 0.7rem */
-    height: auto !important;        /* Force it to ignore the 0.7rem */
-    padding: 10px 25px !important;  /* Give it the pill shape */
-    border-radius: 50px !important; /* Make it rounded */
+    width: auto !important;        
+    height: auto !important;        
+    padding: 10px 25px !important;  
+    border-radius: 50px !important; 
     background-color: #003087;
     display: inline-block;
+}
+
+.fix_button{
+
+    width: auto !important;         
+    height: auto !important;        
+    padding: 10px 25px !important;  
+    border-radius: 50px !important; 
+
+
 }
 
 .montserrat-bp {
