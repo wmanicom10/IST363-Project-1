@@ -1,32 +1,19 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Otto's Website</title>
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/foundation-sites@6.7.5/dist/css/foundation.min.css">
-    <link rel="stylesheet" href="styles.css">
-    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/what-input/5.2.10/what-input.min.js"></script>
-
-    <script src="https://cdn.jsdelivr.net/npm/foundation-sites@6.7.5/dist/js/foundation.min.js"></script>
-
-    <script>
-    $(document).ready(function() {
-        $(document).foundation();
-    });
-    </script>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100..700;1,100..700&family=Montserrat:ital,wght@0,900;1,900&display=swap" rel="stylesheet">
-</head>
-<body>
-    <header>
-        <nav>
-            <!-- Will Does -->
-        </nav>
-        D
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Otto's Website</title>
+        <link rel = "stylesheet" href = "styles.css">
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/foundation-sites@6.7.5/dist/css/foundation.min.css">
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/motion-ui@1.2.3/dist/motion-ui.min.css"/>
+    </head>
+    <body>
+        
+        <!-- Mobile top bar -->
+        <div class="title-bar" data-responsive-toggle="responsive-menu" data-hide-for="medium">
+            <button class="menu-icon" type="button" data-toggle="responsive-menu"></button>
+        </div>
 
         <!-- Desktop top bar -->
         <div class="top-bar" id="responsive-menu">
@@ -41,68 +28,68 @@
             </div>
         </div>
         
-        <!-- Content area featuring large image with accompanying text.:Jareline -->
-
-        <section class = "grid-container space_font_bp text-center">
-            <h2 class = "montserrat-bp">🍊Meet Otto!</h2>
-        <div class="grid-x grid-margin-x grid-padding-y ">
-
-            <div class="cell small-12 medium-3 text-center p-3 callout">
-                <img src="images/otto_bus.png" alt="Otto with bus">
-                <h5 class="space_head_bp">Otto with a bus!</h5>
-                <button class="button" type="button" data-toggle="example-dropdown-bottom-center">Fun Fact!</button>
-                <div class="dropdown-pane" data-position="bottom" data-alignment="center" id="example-dropdown-bottom-center" data-dropdown data-auto-focus="true">
-                Mascot Hall of Fame: Otto was inducted into the Mascot Hall of Fame in 2023, becoming one of the few collegiate mascots to achieve this.
+        <main>
+            <!-- Content area featuring large image with accompanying text.:Jareline -->
+              <div class="grid-container" id="history">
+                <div class="grid-x grid-margin-x align-top">
+                    <div class="cell small-12 medium-6">
+                        <div class="orbit" role="region" aria-label="History of Otto Photos" data-orbit data-options="autoPlay: false; animInFromLeft:fade-in; animInFromRight:fade-in; animOutToLeft:fade-out; animOutToRight:fade-out;">
+                            <div class="orbit-wrapper">
+                                <div  class="orbit-controls">
+                                    <button class="orbit-previous"><span class="show-for-sr">Previous Slide</span>&#9664;&#xFE0E;</button>
+                                    <button class="orbit-next"><span class="show-for-sr">Next Slide</span>&#9654;&#xFE0E;</button>
+                                </div>
+                                <ul class="orbit-container">
+                                    <li class="is-active orbit-slide">
+                                        <figure class="orbit-figure">
+                                            <img class="orbit-image" src="images/otto_fans.png" alt="Otto on Bus">
+                                        </figure>
+                                    </li>
+                                    <li class="orbit-slide">
+                                        <figure class="orbit-figure">
+                                            <img class="orbit-image" src="images/warrior_statue.png" alt="Otto Cheering">
+                                        </figure>
+                                    </li>
+                                    <li class="orbit-slide">
+                                        <figure class="orbit-figure">
+                                            <img class="orbit-image" src="images/otto_cheerleading.png" alt="Otto at the Dome">
+                                        </figure>
+                                    </li>
+                                    <li class="orbit-slide">
+                                        <figure class="orbit-figure">
+                                            <img class="orbit-image" src="images/otto_fame.png" alt="Otto at the Dome">
+                                        </figure>
+                                    </li>
+                                </ul>
+                            </div>
+                            <nav class="orbit-bullets">
+                                <button class="is-active" data-slide="0"></button>
+                                <button data-slide="1"></button>
+                                <button data-slide="2"></button>
+                                <button data-slide="2"></button>
+                            </nav>
+                        </div> 
+                    </div>      
+                    <div class="cell small-12 medium-6">
+                      <h3>A Brief History on Otto</h3>
+                      <p>Before Otto, Syracuse University's mascot was the Saltine Warrior, a Native American character
+                        that originated from a student newspaper hoax in 1928. For obvious reasons, the Saltine Warrior was
+                        retired in 1978 after Native American students petioned for its removal. A Roman Gladiator
+                        briefly took its place, but fans largely rejected the idea. The orange character first emerged in the
+                        early 1980s after SU cheerleader Eric Heath designed it. The name "Otto" wasn't chosen until the summer
+                        of 1990 at a cheerleading camp in Tennessee, beating the name "Opie." It wasn't until 1995 that Otto the
+                        Orange was recognized by Chancellor Buzz Shaw as the official mascot of Syracuse University. 
+                      </p>
+                      <h5>Fun Facts:</h5>
+                      <ul>
+                        <li>His costume weights 10 pounds</li>
+                        <li>Loves golf cart rides</li>
+                        <li>Inducted into the Mascot Hall of Fame in 2023 </li>
+                      </ul>
+                    </div>
                 </div>
             </div>
-
-            <div class="cell small-12 medium-3 text-center callout">
-                <img src="images/otto_cheer.png" alt="Image 2">
-                <h5 class = "space_head_bp">Otto cheering!</h5>
-                <div class="reveal" id="exampleModal1" data-reveal>
-                <h1>Wow, another fun fact.</h1>
-                <p class="lead">No Sound...</p>
-                <p>Otto never speaks, communicating only through gestures, dancing, and high-fives.</p>
-                <button class="close-button" data-close aria-label="Close modal" type="button">
-                    <span aria-hidden="true">&times;</span>
-                </button>
-                </div>
-                <p><button class="button" data-open="exampleModal1">Fun Fact!</button></p>
-            </div>
-
-            <div class="cell small-12 medium-3 text-center callout">
-                <img src="images/otto_dome.png" alt="Image 3">
-                <h5 class="space_head_bp">Otto in the dome!</h5>
-                <button class="button" type="button" data-toggle="example-dropdown-bottom-left">Fun Fact!</button>
-<div class="dropdown-pane" data-position="bottom" data-alignment="left" id="example-dropdown-bottom-left" data-dropdown data-auto-focus="true">
-   Otto replaced the controversial "Saltine Warrior" after Native American students successfully petitioned against the stereotypical depiction in 1978
-</div>
-            </div>
-
-            <div class="cell small-12 medium-3 text-center callout radius">
-                <img src="images/otto_motorcycle.png" alt="Image 4">
-                <h5 class="space_head_bp">Otto on a motorcycle!</h5>
-
-                <button class="button" data-open="exampleModal2">Fun Fact!</button>
-
-                <div class="reveal" id="exampleModal2" data-reveal>
-                    <h1>Awesome!</h1>
-                    <p class="lead">Guess what?</p>
-                    <button class="button" data-open="exampleModal3">Click me to find out!</button>
-                    <button class="close-button" data-close aria-label="Close reveal" type="button">
-                        <span aria-hidden="true">&times;</span>
-                    </button>
-                </div>
-
-                <div class="reveal" id="exampleModal3" data-reveal>
-                    <h2>Otto is an orange.</h2>
-                    <button class="close-button" data-close aria-label="Close reveal" type="button">
-                        <span aria-hidden="true">&times;</span>
-                    </button>
-                </div>
-            </div>
-        </section>
-
+            
 
             <section class = "grid-container space_font_bp text-center" id="pics">
                 <h2 class = "montserrat-bp">🍊Meet Otto!</h2>
@@ -189,7 +176,4 @@
         </script>
 
     </body>
-</html>
-
-</body>
 </html>
